@@ -1,0 +1,48 @@
+
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		int a[] = new int[4]; 
+		int b;
+		int sum=0;
+		int eveindsum = 0, oddindsum = 0;
+		for(int i=0;i<a.length;i++)
+		{
+		    System.out.println("Enter the array element "+i+":");
+		    a[i] = sc.nextInt();
+		    
+		    
+		}
+		
+		System.out.println("Even array index elements:");
+		for(int i=0;i<a.length;i+=2)
+		{
+		   
+		    System.out.println(a[i]);
+		    eveindsum = eveindsum+a[i];
+		}
+		
+		System.out.println("Odd array index elements:");
+		for(int i=1;i<a.length;i+=2) 
+		{
+		    
+		    System.out.println(a[i]);
+		    oddindsum = oddindsum + a[i];
+		    
+		    
+		}
+		
+		System.out.println("EVEN INDEX ELEMENTS SUM IS: "+eveindsum);
+		System.out.println();
+		System.out.println("ODD INDEX ELEMENTS SUM IS: "+oddindsum);
+		System.out.println();
+		
+		System.out.println("The array sum is "+sum);
+		System.out.println(a.length);
+		System.out.println(a);
+		System.out.println(Arrays.toString(a));
+	}
+}
