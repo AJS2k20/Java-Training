@@ -1,0 +1,21 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main
+{
+    
+   
+    
+    
+	public static void main(String[] args) {
+	    char[] ch = {'C', 'b', '$', ','};
+	    
+	    for(int i=0;i<ch.length; i++){
+	        System.out.println(ch[i] + "->"+ (int) ch[i]);
+	    }
+	    
+	    
+		
+		
+	
+	}
+}
